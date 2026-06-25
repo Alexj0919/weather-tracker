@@ -22,7 +22,7 @@ def get_historical_weather(lat, lon, start_date, end_date):
         "daily": "temperature_2m_max,temperature_2m_min",
         "timezone": "America/Los_Angeles"
     }
-    response = requests.get(url, params=params)
+    response = requests.get(url, params=params, timeout=30)
     return response.json()
 def get_forecast(lat, lon):
     url = "https://api.open-meteo.com/v1/forecast"
@@ -33,7 +33,7 @@ def get_forecast(lat, lon):
         "timezone": "America/Los_Angeles",
         "forecast_days": 7
     }
-    response = requests.get(url, params=params)
+    response = requests.get(url, params=params, timeout=30)
     return response.json()
 today = date.today()
 current_year = today.year

@@ -1,1 +1,1 @@
-This program tracks the daytime highs and lows at Flamenco beach, Puerto Rico. It uses Open Meteo's data for the temperature and I built it to see if Flamenco beach is a good camping spot.
+This program tracks the daytime highs and lows at Flamenco beach, Puerto Rico. It uses Open Meteo's historical and live data for the temperature and I built it to see if Flamenco beach is a good camping spot.
